@@ -4,15 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jinsey Lab — Research & Engineering</title>
-  <meta name="description" content="Jinsey Lab is an independent research and engineering lab exploring hard problems in mathematics, quantum information, and software systems." />
+  <meta name="description" content="Jinsey Lab is an independent research and software lab founded in 2026 by Jinsey Yang, working across mathematics, quantum information, and software systems." />
   <meta name="theme-color" content="#f3f2ec" />
   <meta property="og:title" content="Jinsey Lab — Research & Engineering" />
-  <meta property="og:description" content="Independent research and engineering across mathematics, quantum information, and software systems." />
+  <meta property="og:description" content="Independent research and software lab founded in 2026, working across mathematics, quantum information, and software systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jinseylab.tech/" />
   <link rel="canonical" href="https://jinseylab.tech/" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Jinsey Lab",
+    "url": "https://jinseylab.tech/",
+    "foundingDate": "2026",
+    "email": "contact@jinseylab.tech",
+    "founder": {
+      "@type": "Person",
+      "name": "Jinsey Yang",
+      "jobTitle": "Founder & Research Engineer"
+    },
+    "sameAs": [
+      "https://github.com/OIerYangJZ"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -24,8 +42,9 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a class="nav-github" href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
       </nav>
@@ -61,7 +80,41 @@
         </div>
       </section>
 
-      <section class="manifesto section section-divider" aria-label="About Jinsey Lab">
+      <section id="about" class="about section section-divider">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Independent by design.</h2>
+        </div>
+
+        <div class="about-body">
+          <p class="about-intro">
+            Jinsey Lab is an independent research and software lab founded in 2026. We work across mathematics,
+            quantum information, and software systems, with a focus on technically difficult problems that benefit
+            from both rigorous analysis and implementation.
+          </p>
+
+          <dl class="facts">
+            <div class="fact">
+              <dt>Founded</dt>
+              <dd>2026</dd>
+            </div>
+            <div class="fact">
+              <dt>Founder</dt>
+              <dd>Jinsey Yang</dd>
+            </div>
+            <div class="fact">
+              <dt>Role</dt>
+              <dd>Founder & Research Engineer</dd>
+            </div>
+            <div class="fact">
+              <dt>Current work</dt>
+              <dd>Agentic software engineering, quantum compilation, and research tooling</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="manifesto section section-divider" aria-label="What Jinsey Lab does">
         <p class="section-label">What we do</p>
         <p class="manifesto-text">
           We work where theory, computation, and engineering meet — with a bias toward precise questions,
@@ -96,6 +149,34 @@
             <p>Developer tools and experimental systems designed for clarity, control, and extensibility.</p>
             <span class="card-tag">ENGINEERING</span>
           </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section section-divider">
+        <div class="section-heading">
+          <p class="section-label">Selected public work</p>
+          <h2>Projects in the open.</h2>
+        </div>
+
+        <div class="project-list">
+          <a class="project-row" href="https://github.com/OIerYangJZ/ucc-compiler-for-UF" target="_blank" rel="noreferrer">
+            <span class="project-index">01</span>
+            <strong>ucc-compiler-for-UF</strong>
+            <span>Quantum compilation</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="project-row" href="https://github.com/OIerYangJZ/AgentRecall-MCP" target="_blank" rel="noreferrer">
+            <span class="project-index">02</span>
+            <strong>AgentRecall-MCP</strong>
+            <span>Agent infrastructure</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="project-row" href="https://github.com/OIerYangJZ/PaperPilot" target="_blank" rel="noreferrer">
+            <span class="project-index">03</span>
+            <strong>PaperPilot</strong>
+            <span>Research tooling</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
@@ -147,6 +228,12 @@
             <span aria-hidden="true">↗</span>
           </a>
 
+          <a class="contact-link" href="mailto:jinsey@jinseylab.tech">
+            <span>Founder</span>
+            <strong>jinsey@jinseylab.tech</strong>
+            <span aria-hidden="true">↗</span>
+          </a>
+
           <a class="contact-link" href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">
             <span>GitHub</span>
             <strong>OIerYangJZ</strong>
@@ -158,7 +245,7 @@
 
     <footer class="site-footer">
       <span>© <span id="year">2026</span> Jinsey Lab</span>
-      <span>Research · Engineering · Open work</span>
+      <span>Founded 2026 · Research · Engineering · Open work</span>
     </footer>
   </div>
 

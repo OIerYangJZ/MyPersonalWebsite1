@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PaperPilot — a local-first arXiv radar and paper workspace | Jinsey Lab</title>
+  <meta name="description" content="PaperPilot ranks new arXiv papers against your research profile, displays PDFs in a reader, and writes structured AI notes as local Markdown for Obsidian or any knowledge base." />
+  <meta name="theme-color" content="#0d1321" />
+  <meta property="og:site_name" content="Jinsey Lab" />
+  <meta property="og:title" content="PaperPilot — a local-first arXiv radar and paper workspace" />
+  <meta property="og:description" content="A daily arXiv radar with a reader and structured AI notes, kept as local Markdown." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jinseylab.tech/paperpilot/" />
+  <link rel="canonical" href="https://jinseylab.tech/paperpilot/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/company-v3.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PaperPilot",
+    "description": "A local-first arXiv radar and Markdown paper-reading workspace with structured AI notes.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Linux, macOS, Windows",
+    "license": "https://opensource.org/licenses/MIT",
+    "url": "https://jinseylab.tech/paperpilot/",
+    "codeRepository": "https://github.com/OIerYangJZ/PaperPilot",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Jinsey Lab", "url": "https://jinseylab.tech/" }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Jinsey Lab home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
+        </span>
+        <span class="brand-name">Jinsey Lab</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/#products">Products</a>
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/" aria-current="page">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+      </nav>
+
+      <a class="header-cta" href="#start">Get started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="overline">PaperPilot · Research</p>
+          <h1>Follow arXiv without drowning in it.</h1>
+          <p class="hero-body">
+            PaperPilot ranks each day's arXiv papers against your research profile, opens them in a side-by-side
+            reader, and writes structured AI notes — all stored locally as Markdown you own.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#start">Get started</a>
+            <a class="button button-secondary" href="https://github.com/OIerYangJZ/PaperPilot" target="_blank" rel="noreferrer">View source</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="PaperPilot at a glance">
+          <div class="panel-heading">
+            <span>At a glance</span>
+            <span class="status-badge">Self-hosted</span>
+          </div>
+
+          <dl class="profile-list">
+            <div>
+              <dt>Interface</dt>
+              <dd>CLI + Web UI (English / 中文)</dd>
+            </div>
+            <div>
+              <dt>Storage</dt>
+              <dd>Local PDFs, SQLite, Markdown</dd>
+            </div>
+            <div>
+              <dt>Models</dt>
+              <dd>Any OpenAI-compatible endpoint</dd>
+            </div>
+            <div>
+              <dt>Price</dt>
+              <dd>Free · MIT license</dd>
+            </div>
+          </dl>
+
+          <div class="panel-footer">
+            <a href="https://github.com/OIerYangJZ/PaperPilot" target="_blank" rel="noreferrer">Source ↗</a>
+            <a href="https://github.com/OIerYangJZ/PaperPilot/issues" target="_blank" rel="noreferrer">Issues ↗</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <p class="overline">Features</p>
+            <h2>From radar to notes in one place.</h2>
+          </div>
+        </div>
+
+        <div class="feature-list feature-list-3">
+          <article>
+            <h3>Daily arXiv radar</h3>
+            <p>Ranks new papers by your field, keywords, exclusions, and categories, and shows why each one was recommended.</p>
+          </article>
+          <article>
+            <h3>Reader workspace</h3>
+            <p>Read the PDF and edit your Markdown notes side by side. Import by arXiv ID, URL, PDF, or TeX source.</p>
+          </article>
+          <article>
+            <h3>Notes that survive regeneration</h3>
+            <p>AI summaries and your own “My Notes” live in one file, and regenerating a summary never overwrites what you wrote.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section section-tint">
+      <div class="shell split-layout">
+        <div class="section-kicker">
+          <p class="overline">Get started</p>
+          <h2>Five commands to your first radar.</h2>
+        </div>
+
+        <div class="profile-panel">
+          <div class="terminal">
+            <p class="terminal-comment"># from a clone of github.com/OIerYangJZ/PaperPilot</p>
+            <p><span class="terminal-prompt">$</span> uv sync</p>
+            <p><span class="terminal-prompt">$</span> uv run paperpilot init</p>
+            <p><span class="terminal-prompt">$</span> uv run paperpilot refresh</p>
+            <p><span class="terminal-prompt">$</span> uv run paperpilot list</p>
+            <p><span class="terminal-prompt">$</span> uv run paperpilot serve</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-main">
+      <div>
+        <a class="brand footer-brand" href="/">
+          <span class="brand-mark footer-mark" aria-hidden="true">
+            <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
+          </span>
+          <span class="brand-name">Jinsey Lab</span>
+        </a>
+        <p>Software for agents and research, founded in 2026.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+        <a href="/#research">Research</a>
+      </div>
+
+      <div class="footer-nav">
+        <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a>
+        <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© <span id="year">2026</span> Jinsey Lab</span>
+      <span>MyCoder · PaperPilot · FinalPilot</span>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

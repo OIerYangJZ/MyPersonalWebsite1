@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jinsey Lab — Research & Software Systems</title>
-  <meta name="description" content="Jinsey Lab is an independent research and software company founded in 2026, working across agentic software engineering, quantum information, and scientific tooling." />
+  <title>Jinsey Lab — MyCoder, PaperPilot & FinalPilot</title>
+  <meta name="description" content="Jinsey Lab builds developer and research software: MyCoder, a policy-enforced coding agent for the terminal; PaperPilot, a local-first arXiv radar; and FinalPilot, a local-first exam review workspace." />
   <meta name="theme-color" content="#0d1321" />
   <meta name="robots" content="index,follow" />
   <meta property="og:site_name" content="Jinsey Lab" />
-  <meta property="og:title" content="Jinsey Lab — Research & Software Systems" />
-  <meta property="og:description" content="Research-driven software engineering across intelligent systems, quantum information, and scientific tooling." />
+  <meta property="og:title" content="Jinsey Lab — MyCoder, PaperPilot & FinalPilot" />
+  <meta property="og:description" content="Software products for working with AI agents and research: MyCoder, PaperPilot, and FinalPilot." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jinseylab.tech/" />
   <meta name="twitter:card" content="summary" />
@@ -19,18 +19,53 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Jinsey Lab",
-    "url": "https://jinseylab.tech/",
-    "foundingDate": "2026",
-    "description": "Independent research and software company working across agentic software engineering, quantum information, and scientific tooling.",
-    "email": "contact@jinseylab.tech",
-    "founder": {
-      "@type": "Person",
-      "name": "Jinsey Yang",
-      "jobTitle": "Founder & Research Engineer"
-    },
-    "sameAs": ["https://github.com/OIerYangJZ"]
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://jinseylab.tech/#org",
+        "name": "Jinsey Lab",
+        "url": "https://jinseylab.tech/",
+        "foundingDate": "2026",
+        "description": "Software company building MyCoder, PaperPilot, and FinalPilot: tools for working with AI agents and research.",
+        "email": "contact@jinseylab.tech",
+        "founder": {
+          "@type": "Person",
+          "name": "Jinsey Yang",
+          "jobTitle": "Founder"
+        },
+        "sameAs": ["https://github.com/OIerYangJZ"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "MyCoder",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux, macOS, Windows",
+        "softwareVersion": "0.1.0-alpha.14",
+        "license": "https://opensource.org/licenses/MIT",
+        "url": "https://jinseylab.tech/mycoder/",
+        "downloadUrl": "https://www.npmjs.com/package/mycoder-cli",
+        "publisher": { "@id": "https://jinseylab.tech/#org" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "PaperPilot",
+        "applicationCategory": "EducationalApplication",
+        "license": "https://opensource.org/licenses/MIT",
+        "url": "https://jinseylab.tech/paperpilot/",
+        "publisher": { "@id": "https://jinseylab.tech/#org" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "FinalPilot",
+        "applicationCategory": "EducationalApplication",
+        "license": "https://opensource.org/licenses/MIT",
+        "url": "https://jinseylab.tech/finalpilot/",
+        "publisher": { "@id": "https://jinseylab.tech/#org" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    ]
   }
   </script>
 </head>
@@ -46,13 +81,15 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
+        <a href="#products">Products</a>
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+        <a href="#research">Research</a>
         <a href="#company">Company</a>
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#leadership">Leadership</a>
       </nav>
 
-      <a class="header-cta" href="mailto:contact@jinseylab.tech">Contact</a>
+      <a class="header-cta" href="#mycoder">Get MyCoder</a>
     </div>
   </header>
 
@@ -60,237 +97,228 @@
     <section class="hero">
       <div class="shell hero-layout">
         <div class="hero-copy">
-          <p class="overline">Research & software systems</p>
-          <h1>Building rigorous systems for difficult technical problems.</h1>
+          <p class="overline">Software for agents & research</p>
+          <h1>Tools you can trust to act on your behalf.</h1>
           <p class="hero-body">
-            Jinsey Lab is a founder-led research and software company working across agentic engineering,
-            quantum information, and scientific tooling.
+            Jinsey Lab builds MyCoder, a coding agent for the terminal whose every tool call passes a policy engine
+            first — plus PaperPilot and FinalPilot, local-first workspaces for research and study.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#work">View selected work</a>
-            <a class="button button-secondary" href="mailto:contact@jinseylab.tech">Start a conversation</a>
+            <a class="button button-primary" href="#mycoder">Install MyCoder</a>
+            <a class="button button-secondary" href="#products">See all products</a>
           </div>
         </div>
 
-        <aside class="profile-panel" aria-label="Jinsey Lab company profile">
+        <aside class="profile-panel install-panel" aria-label="Install MyCoder">
           <div class="panel-heading">
-            <span>Company profile</span>
-            <span>2026</span>
+            <span>Install MyCoder</span>
+            <span class="status-badge">Alpha</span>
           </div>
 
-          <dl class="profile-list">
-            <div>
-              <dt>Founded</dt>
-              <dd>2026</dd>
-            </div>
-            <div>
-              <dt>Founder</dt>
-              <dd>Jinsey Yang</dd>
-            </div>
-            <div>
-              <dt>Primary areas</dt>
-              <dd>AI systems, quantum software, research tooling</dd>
-            </div>
-            <div>
-              <dt>Operating model</dt>
-              <dd>Founder-led, research-driven, open technical work</dd>
-            </div>
-          </dl>
+          <div class="terminal">
+            <p class="terminal-comment"># npm (Node 22.18+)</p>
+            <p><span class="terminal-prompt">$</span> npm install -g mycoder-cli@alpha</p>
+            <p class="terminal-comment"># or Homebrew</p>
+            <p><span class="terminal-prompt">$</span> brew tap OIerYangJZ/mycoder</p>
+            <p><span class="terminal-prompt">$</span> brew trust OIerYangJZ/mycoder</p>
+            <p><span class="terminal-prompt">$</span> brew install mycoder</p>
+            <p class="terminal-comment"># check your setup</p>
+            <p><span class="terminal-prompt">$</span> mycoder doctor</p>
+          </div>
 
           <div class="panel-footer">
-            <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a>
-            <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.npmjs.com/package/mycoder-cli" target="_blank" rel="noreferrer">npm ↗</a>
+            <a href="https://github.com/OIerYangJZ/MyCoder" target="_blank" rel="noreferrer">Source ↗</a>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="credibility-bar" aria-label="Jinsey Lab operating focus">
+    <section class="credibility-bar" aria-label="Jinsey Lab at a glance">
       <div class="shell credibility-grid">
         <div>
-          <strong>Research-driven</strong>
-          <span>First-principles technical work</span>
+          <strong>3 products</strong>
+          <span>MyCoder, PaperPilot, FinalPilot</span>
         </div>
         <div>
-          <strong>Systems-oriented</strong>
-          <span>From architecture to implementation</span>
+          <strong>300+ npm downloads</strong>
+          <span>MyCoder's first month on npm and Homebrew</span>
         </div>
         <div>
-          <strong>Open technical work</strong>
-          <span>Public code and reproducible artifacts</span>
+          <strong>MIT-licensed</strong>
+          <span>Source available for every product</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section section-tint">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <p class="overline">Products</p>
+            <h2>What we make.</h2>
+          </div>
+          <a class="inline-link" href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">All source on GitHub ↗</a>
+        </div>
+
+        <div class="project-grid">
+          <a class="project-card" href="/mycoder/">
+            <div class="project-topline">
+              <span>Developer tools</span>
+              <span class="status-badge">Alpha</span>
+            </div>
+            <h3>MyCoder</h3>
+            <p>
+              A coding agent kernel for the terminal. It reads, edits, runs your tests, and checks its own work —
+              with every tool call decided by a policy engine before it runs.
+            </p>
+            <div class="project-bottom">
+              <span>CLI · Linux · macOS · Windows</span>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="/paperpilot/">
+            <div class="project-topline">
+              <span>Research</span>
+              <span>Self-hosted</span>
+            </div>
+            <h3>PaperPilot</h3>
+            <p>
+              A daily arXiv radar ranked against your research profile, with a reader and structured AI notes —
+              all kept as local Markdown for Obsidian or any knowledge base.
+            </p>
+            <div class="project-bottom">
+              <span>CLI + Web UI · Local-first</span>
+              <span>→</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="/finalpilot/">
+            <div class="project-topline">
+              <span>Education</span>
+              <span>Self-hosted</span>
+            </div>
+            <h3>FinalPilot</h3>
+            <p>
+              Turns lecture slides, notes, and past exams into source-linked study notes and review packs. AI
+              suggests; the student confirms before anything is saved.
+            </p>
+            <div class="project-bottom">
+              <span>Web app · Local-first</span>
+              <span>→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mycoder" class="section">
+      <div class="shell split-layout">
+        <div class="section-kicker">
+          <p class="overline">Flagship product</p>
+          <h2>MyCoder: an agent that says what it can enforce.</h2>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.npmjs.com/package/mycoder-cli" target="_blank" rel="noreferrer">Install from npm</a>
+            <a class="button button-secondary" href="/mycoder/">Product page</a>
+          </div>
+        </div>
+
+        <div class="feature-list">
+          <article>
+            <h3>Policy before action</h3>
+            <p>Every tool call becomes an access request that a policy engine approves or refuses before the tool does anything.</p>
+          </article>
+          <article>
+            <h3>Zero runtime dependencies</h3>
+            <p>One process on Node 22.18+. The supply chain is the package itself, and published bytes are the bytes the release gate tested.</p>
+          </article>
+          <article>
+            <h3>Bring your own model</h3>
+            <p>Adapters for Anthropic Messages, OpenAI Responses, and OpenAI-compatible APIs such as DeepSeek, OpenRouter, or a local llama.cpp.</p>
+          </article>
+          <article>
+            <h3>Honest accounting</h3>
+            <p>Token and cost totals come from the session's own event log. Refused actions are reported separately from completed ones.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section section-tint">
+      <div class="shell">
+        <div class="section-header capability-header">
+          <div>
+            <p class="overline">Research</p>
+            <h2>Published work behind the products.</h2>
+          </div>
+          <p class="section-note">
+            We publish the code and data behind our research in quantum compilation.
+          </p>
+        </div>
+
+        <div class="capability-list">
+          <a href="https://github.com/OIerYangJZ/representation-as-resource" target="_blank" rel="noreferrer">
+            <article>
+              <span class="cap-number">01</span>
+              <div>
+                <h3>Representation as a Computational Resource in Quantum Compilation ↗</h3>
+                <p>Manuscript, analysis code, and frozen data (Yang, Li, Deng).</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="https://github.com/OIerYangJZ/memory-magic-exchange-law" target="_blank" rel="noreferrer">
+            <article>
+              <span class="cap-number">02</span>
+              <div>
+                <h3>A Memory-Magic Exchange Law in Streaming Clifford+T Compilation ↗</h3>
+                <p>Source, data, and scripts for the paper.</p>
+              </div>
+            </article>
+          </a>
+
+          <a href="https://github.com/OIerYangJZ/ucc-compiler-for-UF" target="_blank" rel="noreferrer">
+            <article>
+              <span class="cap-number">03</span>
+              <div>
+                <h3>UCC Compiler ↗</h3>
+                <p>Prototype compiler, benchmark scripts, and experiment data for representation-aware circuit optimization.</p>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="company" class="section">
-      <div class="shell split-layout">
-        <div class="section-kicker">
-          <p class="overline">Company</p>
-          <h2>Research depth with an engineering endpoint.</h2>
-        </div>
-
-        <div class="company-copy">
-          <p class="lead">
-            Jinsey Lab was founded in 2026 to work on technical problems where research quality and software quality
-            need to coexist.
-          </p>
-          <p>
-            We focus on problems that benefit from careful reasoning, explicit evaluation, and implementation that can
-            be inspected rather than treated as a black box. Current work spans agentic software systems, quantum
-            compilation, and tools for research-intensive workflows.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="section section-tint">
-      <div class="shell">
-        <div class="section-header">
-          <div>
-            <p class="overline">Selected work</p>
-            <h2>Public projects.</h2>
-          </div>
-          <a class="inline-link" href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">View all repositories ↗</a>
-        </div>
-
-        <div class="project-grid">
-          <a class="project-card" href="https://github.com/OIerYangJZ/ucc-compiler-for-UF" target="_blank" rel="noreferrer">
-            <div class="project-topline">
-              <span>Quantum software</span>
-              <span>Open source</span>
-            </div>
-            <h3>UCC Compiler</h3>
-            <p>
-              Prototype compiler code, benchmark scripts, and experiment data for representation-aware quantum
-              compilation and circuit optimization research.
-            </p>
-            <div class="project-bottom">
-              <span>Python · Research artifacts</span>
-              <span>↗</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://github.com/OIerYangJZ/AgentRecall-MCP" target="_blank" rel="noreferrer">
-            <div class="project-topline">
-              <span>Agent infrastructure</span>
-              <span>Open source</span>
-            </div>
-            <h3>AgentRecall</h3>
-            <p>
-              Persistent, compounding memory infrastructure for AI agents, delivered through an MCP server, SDK, and CLI.
-            </p>
-            <div class="project-bottom">
-              <span>MCP · SDK · CLI</span>
-              <span>↗</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://github.com/OIerYangJZ/PaperPilot" target="_blank" rel="noreferrer">
-            <div class="project-topline">
-              <span>Scientific tooling</span>
-              <span>Open source</span>
-            </div>
-            <h3>PaperPilot</h3>
-            <p>
-              A local-first arXiv radar and Markdown research workspace for finding, reading, annotating, and organizing papers.
-            </p>
-            <div class="project-bottom">
-              <span>Research workflow · Local-first</span>
-              <span>↗</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-header capability-header">
-          <div>
-            <p class="overline">Capabilities</p>
-            <h2>Where we work.</h2>
-          </div>
-          <p class="section-note">
-            Our work sits at the intersection of research software, intelligent systems, and technical infrastructure.
-          </p>
-        </div>
-
-        <div class="capability-list">
-          <article>
-            <span class="cap-number">01</span>
-            <div>
-              <h3>Agentic software engineering</h3>
-              <p>Agent runtimes, context and memory systems, tool execution, reliability, evaluation, and developer workflows.</p>
-            </div>
-          </article>
-
-          <article>
-            <span class="cap-number">02</span>
-            <div>
-              <h3>Quantum information</h3>
-              <p>Quantum compilation, circuit optimization, representation-aware methods, and computational experiments.</p>
-            </div>
-          </article>
-
-          <article>
-            <span class="cap-number">03</span>
-            <div>
-              <h3>Scientific tooling</h3>
-              <p>Research software for literature discovery, local knowledge workflows, technical analysis, and reproducible work.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="approach" class="section approach-section">
-      <div class="shell">
-        <div class="section-header">
-          <div>
-            <p class="overline overline-light">Approach</p>
-            <h2>Professional rigor without unnecessary process.</h2>
-          </div>
-        </div>
-
-        <div class="principle-grid">
-          <article>
-            <span>01</span>
-            <h3>Start with the bottleneck.</h3>
-            <p>Define the hard constraint precisely before adding complexity around it.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Make claims inspectable.</h3>
-            <p>Prefer tests, benchmarks, artifacts, and clear interfaces over opaque confidence.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Engineer for continuation.</h3>
-            <p>Build systems that can be extended, audited, and used beyond a single demonstration.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadership" class="section">
       <div class="shell split-layout leadership-layout">
         <div class="section-kicker">
-          <p class="overline">Leadership</p>
-          <h2>Founder-led from research to implementation.</h2>
+          <p class="overline">Company</p>
+          <h2>Founded in 2026 to build software people can inspect.</h2>
         </div>
 
-        <div class="leader-profile">
-          <div class="leader-monogram" aria-hidden="true">JY</div>
-          <div>
-            <h3>Jinsey Yang</h3>
-            <p class="leader-title">Founder & Research Engineer</p>
-            <p class="leader-text">
-              Leads Jinsey Lab’s technical direction across software systems, quantum information, and research engineering.
+        <div>
+          <div class="company-copy">
+            <p class="lead">
+              AI tools increasingly act for their users. We build products where what the software did — and what it
+              was allowed to do — is visible and verifiable.
             </p>
-            <div class="leader-links">
-              <a href="mailto:jinsey@jinseylab.tech">jinsey@jinseylab.tech</a>
-              <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+
+          <div class="leader-profile">
+            <div class="leader-monogram" aria-hidden="true">JY</div>
+            <div>
+              <h3>Jinsey Yang</h3>
+              <p class="leader-title">Founder</p>
+              <p class="leader-text">
+                Builds MyCoder, PaperPilot, and FinalPilot, and leads the lab's quantum compilation research.
+              </p>
+              <div class="leader-links">
+                <a href="mailto:jinsey@jinseylab.tech">jinsey@jinseylab.tech</a>
+                <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+              </div>
             </div>
           </div>
         </div>
@@ -300,12 +328,12 @@
     <section class="contact-section">
       <div class="shell contact-card">
         <div>
-          <p class="overline">Contact</p>
-          <h2>Research collaborations, technical partnerships, and product conversations.</h2>
+          <p class="overline">Get started</p>
+          <h2>Try MyCoder today, and tell us what breaks.</h2>
         </div>
         <div class="contact-side">
-          <a class="button button-primary" href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a>
-          <p>General inquiries and collaboration requests.</p>
+          <a class="button button-primary" href="https://github.com/OIerYangJZ/MyCoder/issues" target="_blank" rel="noreferrer">Report an issue</a>
+          <p>Product questions: <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a></p>
         </div>
       </div>
     </section>
@@ -320,26 +348,27 @@
           </span>
           <span class="brand-name">Jinsey Lab</span>
         </a>
-        <p>Independent research and software company founded in 2026.</p>
+        <p>Software for agents and research, founded in 2026.</p>
       </div>
 
       <div class="footer-nav">
-        <a href="#company">Company</a>
-        <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
-        <a href="#leadership">Leadership</a>
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+        <a href="#research">Research</a>
       </div>
 
       <div class="footer-nav">
         <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a>
         <a href="mailto:jinsey@jinseylab.tech">jinsey@jinseylab.tech</a>
         <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="/privacy/">Privacy</a>
       </div>
     </div>
 
     <div class="shell footer-bottom">
       <span>© <span id="year">2026</span> Jinsey Lab</span>
-      <span>Research · Software systems · Open technical work</span>
+      <span>MyCoder · PaperPilot · FinalPilot</span>
     </div>
   </footer>
 

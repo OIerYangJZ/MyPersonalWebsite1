@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyCoder — a policy-enforced coding agent for the terminal | Jinsey Lab</title>
+  <meta name="description" content="MyCoder is a coding agent for the terminal. Every tool call is decided by a policy engine before it runs. Zero runtime dependencies; works with Anthropic, OpenAI, and OpenAI-compatible models. Install from npm or Homebrew." />
+  <meta name="theme-color" content="#0d1321" />
+  <meta property="og:site_name" content="Jinsey Lab" />
+  <meta property="og:title" content="MyCoder — a policy-enforced coding agent for the terminal" />
+  <meta property="og:description" content="Every tool call is decided by a policy engine before it runs. Install from npm or Homebrew." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jinseylab.tech/mycoder/" />
+  <link rel="canonical" href="https://jinseylab.tech/mycoder/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/company-v3.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MyCoder",
+    "description": "A coding agent kernel for the terminal. Every tool call is resolved into an access request that a policy engine decides on before the tool runs.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Linux, macOS, Windows",
+    "softwareVersion": "0.1.0-alpha.14",
+    "license": "https://opensource.org/licenses/MIT",
+    "url": "https://jinseylab.tech/mycoder/",
+    "downloadUrl": "https://www.npmjs.com/package/mycoder-cli",
+    "codeRepository": "https://github.com/OIerYangJZ/MyCoder",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Jinsey Lab", "url": "https://jinseylab.tech/" }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Jinsey Lab home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
+        </span>
+        <span class="brand-name">Jinsey Lab</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/#products">Products</a>
+        <a href="/mycoder/" aria-current="page">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+      </nav>
+
+      <a class="header-cta" href="#install">Install</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="overline">MyCoder · Developer tools</p>
+          <h1>A coding agent that asks before it acts.</h1>
+          <p class="hero-body">
+            Point MyCoder at a repository and describe a task. It reads, edits, runs your tests, and checks its own
+            work — and every tool call is decided by a policy engine before the tool does anything.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#install">Install MyCoder</a>
+            <a class="button button-secondary" href="https://github.com/OIerYangJZ/MyCoder/blob/main/docs/using-mycoder.md" target="_blank" rel="noreferrer">Read the guide</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="MyCoder at a glance">
+          <div class="panel-heading">
+            <span>At a glance</span>
+            <span class="status-badge">Alpha</span>
+          </div>
+
+          <dl class="profile-list">
+            <div>
+              <dt>Latest</dt>
+              <dd>0.1.0-alpha.14</dd>
+            </div>
+            <div>
+              <dt>Platforms</dt>
+              <dd>Linux, macOS, Windows</dd>
+            </div>
+            <div>
+              <dt>Models</dt>
+              <dd>Anthropic, OpenAI, any OpenAI-compatible API</dd>
+            </div>
+            <div>
+              <dt>Distribution</dt>
+              <dd>npm, Homebrew</dd>
+            </div>
+            <div>
+              <dt>Price</dt>
+              <dd>Free · MIT license</dd>
+            </div>
+          </dl>
+
+          <div class="panel-footer">
+            <a href="https://www.npmjs.com/package/mycoder-cli" target="_blank" rel="noreferrer">npm ↗</a>
+            <a href="https://github.com/OIerYangJZ/MyCoder" target="_blank" rel="noreferrer">Source ↗</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="credibility-bar" aria-label="MyCoder facts">
+      <div class="shell credibility-grid">
+        <div>
+          <strong>300+ npm downloads</strong>
+          <span>In its first month on npm</span>
+        </div>
+        <div>
+          <strong>0 runtime dependencies</strong>
+          <span>The package is the entire supply chain</span>
+        </div>
+        <div>
+          <strong>npm provenance</strong>
+          <span>Published bytes are the bytes that were tested</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="install" class="section section-tint">
+      <div class="shell split-layout">
+        <div class="section-kicker">
+          <p class="overline">Install</p>
+          <h2>Running in under a minute.</h2>
+        </div>
+
+        <div class="profile-panel">
+          <div class="terminal">
+            <p class="terminal-comment"># npm (Node 22.18+)</p>
+            <p><span class="terminal-prompt">$</span> npm install -g mycoder-cli@alpha</p>
+            <p class="terminal-comment"># or Homebrew</p>
+            <p><span class="terminal-prompt">$</span> brew tap OIerYangJZ/mycoder</p>
+            <p><span class="terminal-prompt">$</span> brew trust OIerYangJZ/mycoder</p>
+            <p><span class="terminal-prompt">$</span> brew install mycoder</p>
+            <p class="terminal-comment"># add a model provider key (read from stdin, never echoed)</p>
+            <p><span class="terminal-prompt">$</span> printf %s "$API_KEY" | mycoder setup-credential ~/.config/mycoder/secrets/provider.key</p>
+            <p class="terminal-comment"># verify, then start</p>
+            <p><span class="terminal-prompt">$</span> mycoder doctor</p>
+            <p><span class="terminal-prompt">$</span> mycoder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <p class="overline">Features</p>
+            <h2>Built for work you can audit.</h2>
+          </div>
+        </div>
+
+        <div class="feature-list feature-list-3">
+          <article>
+            <h3>Policy before action</h3>
+            <p>Each tool call declares what it intends — file write, process exec, network connect — and the policy engine answers allow, ask, or deny before any side effect exists.</p>
+          </article>
+          <article>
+            <h3>Four approval modes</h3>
+            <p>Plan, manual, accept-edits, and auto. Secrets, network, VCS mutation, and MCP calls still ask in every mode, including auto.</p>
+          </article>
+          <article>
+            <h3>Honest sandbox reporting</h3>
+            <p>Enforcement is reported per dimension — none, best-effort, policy, container, or OS — so you know what is actually isolated.</p>
+          </article>
+          <article>
+            <h3>Undo with receipts</h3>
+            <p>Atomic writes with a unified diff and rollback metadata. <code>/undo</code> reverses an edit, a turn, or a file, and says what it could not cover.</p>
+          </article>
+          <article>
+            <h3>Bring your own model</h3>
+            <p>Adapters for Anthropic Messages, OpenAI Responses, and OpenAI-compatible APIs such as DeepSeek, OpenRouter, or a local llama.cpp.</p>
+          </article>
+          <article>
+            <h3>Scriptable</h3>
+            <p><code>--json</code> emits one object per line on stdout, so MyCoder drops into CI and shell pipelines without filtering prose.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="shell contact-card">
+        <div>
+          <p class="overline">Support</p>
+          <h2>Found a bug or need a feature?</h2>
+        </div>
+        <div class="contact-side">
+          <a class="button button-primary" href="https://github.com/OIerYangJZ/MyCoder/issues" target="_blank" rel="noreferrer">Open an issue</a>
+          <p>Or email <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-main">
+      <div>
+        <a class="brand footer-brand" href="/">
+          <span class="brand-mark footer-mark" aria-hidden="true">
+            <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
+          </span>
+          <span class="brand-name">Jinsey Lab</span>
+        </a>
+        <p>Software for agents and research, founded in 2026.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+        <a href="/#research">Research</a>
+      </div>
+
+      <div class="footer-nav">
+        <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a>
+        <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© <span id="year">2026</span> Jinsey Lab</span>
+      <span>MyCoder · PaperPilot · FinalPilot</span>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

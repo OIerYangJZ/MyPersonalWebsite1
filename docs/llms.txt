@@ -1,0 +1,27 @@
+# Jinsey Lab
+
+> Jinsey Lab is a software company founded in 2026 that builds and ships its own products: MyCoder, a policy-enforced coding agent for the terminal; PaperPilot, a local-first arXiv radar and paper workspace; and FinalPilot, a local-first exam review workspace. All products are free and MIT-licensed. The lab also publishes research in quantum compilation.
+
+## Products
+
+- [MyCoder](https://jinseylab.tech/mycoder/): Coding agent for the terminal. Every tool call is decided by a policy engine before it runs. Zero runtime dependencies; Anthropic, OpenAI, and OpenAI-compatible models. Distributed on npm (`mycoder-cli`) and Homebrew. Status: alpha (0.1.0-alpha.14).
+- [PaperPilot](https://jinseylab.tech/paperpilot/): Daily arXiv radar ranked against a research profile, with a reader and structured AI notes stored as local Markdown. CLI and Web UI.
+- [FinalPilot](https://jinseylab.tech/finalpilot/): Turns lecture slides, notes, and past exams into source-linked study notes and exam review packs. Local-first web app.
+
+## Source and distribution
+
+- [MyCoder on npm](https://www.npmjs.com/package/mycoder-cli)
+- [MyCoder source](https://github.com/OIerYangJZ/MyCoder)
+- [PaperPilot source](https://github.com/OIerYangJZ/PaperPilot)
+- [FinalPilot source](https://github.com/OIerYangJZ/FinalPilot)
+
+## Research
+
+- [Representation as a Computational Resource in Quantum Compilation](https://github.com/OIerYangJZ/representation-as-resource)
+- [A Memory-Magic Exchange Law in Streaming Clifford+T Compilation](https://github.com/OIerYangJZ/memory-magic-exchange-law)
+
+## Company
+
+- Founder: Jinsey Yang
+- Contact: contact@jinseylab.tech
+- [Privacy](https://jinseylab.tech/privacy/)

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FinalPilot — a local-first AI exam review workspace | Jinsey Lab</title>
+  <meta name="description" content="FinalPilot turns lecture slides, notes, difficult questions, and past exams into source-linked study notes and exam review packs. Local-first; AI suggests, the student confirms." />
+  <meta name="theme-color" content="#0d1321" />
+  <meta property="og:site_name" content="Jinsey Lab" />
+  <meta property="og:title" content="FinalPilot — a local-first AI exam review workspace" />
+  <meta property="og:description" content="Turn course materials into source-linked study notes and exam review packs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jinseylab.tech/finalpilot/" />
+  <link rel="canonical" href="https://jinseylab.tech/finalpilot/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/company-v3.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FinalPilot",
+    "description": "A local-first AI exam review workspace that turns course materials into structured study notes and exam review packs.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Linux, macOS, Windows",
+    "license": "https://opensource.org/licenses/MIT",
+    "url": "https://jinseylab.tech/finalpilot/",
+    "codeRepository": "https://github.com/OIerYangJZ/FinalPilot",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Jinsey Lab", "url": "https://jinseylab.tech/" }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Jinsey Lab home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
+        </span>
+        <span class="brand-name">Jinsey Lab</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/#products">Products</a>
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/" aria-current="page">FinalPilot</a>
+      </nav>
+
+      <a class="header-cta" href="#start">Get started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-layout">
+        <div class="hero-copy">
+          <p class="overline">FinalPilot · Education</p>
+          <h1>Exam review, organized from your own materials.</h1>
+          <p class="hero-body">
+            FinalPilot turns lecture slides, notes, difficult questions, and past exams into source-linked study notes
+            and review packs. AI explains and suggests; the student reviews and confirms before anything is saved.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#start">Get started</a>
+            <a class="button button-secondary" href="https://github.com/OIerYangJZ/FinalPilot" target="_blank" rel="noreferrer">View source</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel" aria-label="FinalPilot at a glance">
+          <div class="panel-heading">
+            <span>At a glance</span>
+            <span class="status-badge">Self-hosted</span>
+          </div>
+
+          <dl class="profile-list">
+            <div>
+              <dt>Interface</dt>
+              <dd>Web app</dd>
+            </div>
+            <div>
+              <dt>Storage</dt>
+              <dd>Local SQLite and files</dd>
+            </div>
+            <div>
+              <dt>Models</dt>
+              <dd>Optional; any OpenAI-compatible endpoint</dd>
+            </div>
+            <div>
+              <dt>Price</dt>
+              <dd>Free · MIT license</dd>
+            </div>
+          </dl>
+
+          <div class="panel-footer">
+            <a href="https://github.com/OIerYangJZ/FinalPilot" target="_blank" rel="noreferrer">Source ↗</a>
+            <a href="https://github.com/OIerYangJZ/FinalPilot/issues" target="_blank" rel="noreferrer">Issues ↗</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="shell">
+        <div class="section-header">
+          <div>
+            <p class="overline">Features</p>
+            <h2>Everything for one course, in one workspace.</h2>
+          </div>
+        </div>
+
+        <div class="feature-list feature-list-3">
+          <article>
+            <h3>Source-aware notes</h3>
+            <p>Extract text page by page from PDFs, and link every Markdown note back to the file and page it came from.</p>
+          </article>
+          <article>
+            <h3>Knowledge points & hard questions</h3>
+            <p>Organize topics into a structure, track difficult questions with status and answers, and search the whole course.</p>
+          </article>
+          <article>
+            <h3>Review packs</h3>
+            <p>Generate exam review packs grouped by knowledge point, and export them with your notes and questions as Markdown.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="start" class="section section-tint">
+      <div class="shell split-layout">
+        <div class="section-kicker">
+          <p class="overline">Get started</p>
+          <h2>Try it with the built-in demo course.</h2>
+        </div>
+
+        <div class="profile-panel">
+          <div class="terminal">
+            <p class="terminal-comment"># from a clone of github.com/OIerYangJZ/FinalPilot</p>
+            <p><span class="terminal-prompt">$</span> python3 -m venv .venv && source .venv/bin/activate</p>
+            <p><span class="terminal-prompt">$</span> pip install -r backend/requirements.txt</p>
+            <p><span class="terminal-prompt">$</span> python backend/scripts/create_demo_course.py</p>
+            <p><span class="terminal-prompt">$</span> cd backend && uvicorn app.main:app --host 127.0.0.1 --port 8000</p>
+            <p class="terminal-comment"># in another terminal</p>
+            <p><span class="terminal-prompt">$</span> cd frontend && npm install && npm run dev</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-main">
+      <div>
+        <a class="brand footer-brand" href="/">
+          <span class="brand-mark footer-mark" aria-hidden="true">
+            <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
+          </span>
+          <span class="brand-name">Jinsey Lab</span>
+        </a>
+        <p>Software for agents and research, founded in 2026.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="/mycoder/">MyCoder</a>
+        <a href="/paperpilot/">PaperPilot</a>
+        <a href="/finalpilot/">FinalPilot</a>
+        <a href="/#research">Research</a>
+      </div>
+
+      <div class="footer-nav">
+        <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a>
+        <a href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="/privacy/">Privacy</a>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <span>© <span id="year">2026</span> Jinsey Lab</span>
+      <span>MyCoder · PaperPilot · FinalPilot</span>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

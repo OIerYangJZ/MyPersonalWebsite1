@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://jinseylab.tech/mycoder/" />
   <link rel="canonical" href="https://jinseylab.tech/mycoder/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="/company-v3.css" />
+  <link rel="stylesheet" href="/site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -111,16 +111,20 @@
     <section class="credibility-bar" aria-label="MyCoder facts">
       <div class="shell credibility-grid">
         <div>
-          <strong>300+ npm downloads</strong>
-          <span>In its first month on npm</span>
+          <span class="stat">300+</span>
+          <span>npm downloads in its first month</span>
         </div>
         <div>
-          <strong>0 runtime dependencies</strong>
-          <span>The package is the entire supply chain</span>
+          <span class="stat">0</span>
+          <span>Runtime dependencies</span>
         </div>
         <div>
-          <strong>npm provenance</strong>
-          <span>Published bytes are the bytes that were tested</span>
+          <span class="stat">3</span>
+          <span>Platforms: Linux, macOS, Windows</span>
+        </div>
+        <div>
+          <span class="stat">MIT</span>
+          <span>Free and open source</span>
         </div>
       </div>
     </section>
@@ -161,26 +165,32 @@
 
         <div class="feature-list feature-list-3">
           <article>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
             <h3>Policy before action</h3>
             <p>Each tool call declares what it intends — file write, process exec, network connect — and the policy engine answers allow, ask, or deny before any side effect exists.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
             <h3>Four approval modes</h3>
             <p>Plan, manual, accept-edits, and auto. Secrets, network, VCS mutation, and MCP calls still ask in every mode, including auto.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
             <h3>Honest sandbox reporting</h3>
             <p>Enforcement is reported per dimension — none, best-effort, policy, container, or OS — so you know what is actually isolated.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></span>
             <h3>Undo with receipts</h3>
             <p>Atomic writes with a unified diff and rollback metadata. <code>/undo</code> reverses an edit, a turn, or a file, and says what it could not cover.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>
             <h3>Bring your own model</h3>
             <p>Adapters for Anthropic Messages, OpenAI Responses, and OpenAI-compatible APIs such as DeepSeek, OpenRouter, or a local llama.cpp.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span>
             <h3>Scriptable</h3>
             <p><code>--json</code> emits one object per line on stdout, so MyCoder drops into CI and shell pipelines without filtering prose.</p>
           </article>

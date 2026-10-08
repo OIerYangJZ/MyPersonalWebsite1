@@ -14,8 +14,8 @@
   <meta property="og:url" content="https://jinseylab.tech/" />
   <meta name="twitter:card" content="summary" />
   <link rel="canonical" href="https://jinseylab.tech/" />
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="./company-v3.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/site.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,7 +73,7 @@
 <body>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="Jinsey Lab home">
+      <a class="brand" href="/" aria-label="Jinsey Lab home">
         <span class="brand-mark" aria-hidden="true">
           <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
         </span>
@@ -86,10 +86,9 @@
         <a href="/paperpilot/">PaperPilot</a>
         <a href="/finalpilot/">FinalPilot</a>
         <a href="#research">Research</a>
-        <a href="#company">Company</a>
       </nav>
 
-      <a class="header-cta" href="#mycoder">Get MyCoder</a>
+      <a class="header-cta" href="/mycoder/">Get MyCoder</a>
     </div>
   </header>
 
@@ -97,81 +96,92 @@
     <section class="hero">
       <div class="shell hero-layout">
         <div class="hero-copy">
-          <p class="overline">Software for agents & research</p>
-          <h1>Tools you can trust to act on your behalf.</h1>
+          <p class="overline">MyCoder 0.1.0-alpha.14 is out</p>
+          <h1>Software you can trust to <span class="gradient-text">act on your behalf.</span></h1>
           <p class="hero-body">
-            Jinsey Lab builds MyCoder, a coding agent for the terminal whose every tool call passes a policy engine
-            first — plus PaperPilot and FinalPilot, local-first workspaces for research and study.
+            Jinsey Lab builds <strong>MyCoder</strong>, a coding agent for the terminal whose every tool call passes a
+            policy engine first — plus <strong>PaperPilot</strong> and <strong>FinalPilot</strong>, local-first
+            workspaces for research and study.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#mycoder">Install MyCoder</a>
-            <a class="button button-secondary" href="#products">See all products</a>
+            <a class="button button-primary" href="/mycoder/">Get started with MyCoder →</a>
+            <a class="button button-secondary" href="#products">Explore products</a>
+          </div>
+
+          <div class="install-pill">
+            <span><span class="terminal-prompt">$</span> npm i -g mycoder-cli@alpha</span>
+            <button class="copy-button" type="button" data-copy="npm install -g mycoder-cli@alpha">Copy</button>
           </div>
         </div>
 
-        <aside class="profile-panel install-panel" aria-label="Install MyCoder">
-          <div class="panel-heading">
-            <span>Install MyCoder</span>
-            <span class="status-badge">Alpha</span>
+        <div class="window" aria-label="A MyCoder session">
+          <div class="window-bar">
+            <i></i><i></i><i></i>
+            <span class="window-title">mycoder — ~/chart</span>
           </div>
-
           <div class="terminal">
-            <p class="terminal-comment"># npm (Node 22.18+)</p>
-            <p><span class="terminal-prompt">$</span> npm install -g mycoder-cli@alpha</p>
-            <p class="terminal-comment"># or Homebrew</p>
-            <p><span class="terminal-prompt">$</span> brew tap OIerYangJZ/mycoder</p>
-            <p><span class="terminal-prompt">$</span> brew trust OIerYangJZ/mycoder</p>
-            <p><span class="terminal-prompt">$</span> brew install mycoder</p>
-            <p class="terminal-comment"># check your setup</p>
-            <p><span class="terminal-prompt">$</span> mycoder doctor</p>
+            <p><span class="terminal-prompt">$</span> mycoder</p>
+            <p class="t-gap"><span class="t-tool">❯</span> <span class="t-user">read src/bars.js and src/format.js, then explain how one chart row is laid out</span></p>
+            <p class="t-gap"><span class="t-ok">⏺</span> Read(src/bars.js)</p>
+            <p><span class="t-ok">⏺</span> Read(src/format.js)</p>
+            <p class="t-dim">  ⎿  Read(src/bars.js) · 4.8 kB</p>
+            <p class="t-dim">  ⎿  Read(src/format.js) · 2.0 kB</p>
+            <p class="t-gap">One chart row is laid out in renderRows as a single string of three fixed-width columns: a label, a bar, and a right-aligned count…</p>
+            <p class="t-gap"><span class="t-tool">✻</span> Worked for 5s</p>
+            <p class="t-dim">  read 2 files</p>
+            <p class="t-dim">  deepseek · 66k ctx · 2 requests · 9.5k tokens · $0.0008</p>
+            <p class="t-gap"><span class="t-tool">❯</span> <span class="t-cursor"></span></p>
           </div>
-
-          <div class="panel-footer">
-            <a href="https://www.npmjs.com/package/mycoder-cli" target="_blank" rel="noreferrer">npm ↗</a>
-            <a href="https://github.com/OIerYangJZ/MyCoder" target="_blank" rel="noreferrer">Source ↗</a>
-          </div>
-        </aside>
+        </div>
       </div>
     </section>
 
     <section class="credibility-bar" aria-label="Jinsey Lab at a glance">
       <div class="shell credibility-grid">
         <div>
-          <strong>3 products</strong>
-          <span>MyCoder, PaperPilot, FinalPilot</span>
+          <span class="stat">3</span>
+          <span>Products shipped</span>
         </div>
         <div>
-          <strong>300+ npm downloads</strong>
-          <span>MyCoder's first month on npm and Homebrew</span>
+          <span class="stat">300+</span>
+          <span>npm downloads in MyCoder's first month</span>
         </div>
         <div>
-          <strong>MIT-licensed</strong>
-          <span>Source available for every product</span>
+          <span class="stat">0</span>
+          <span>Runtime dependencies in MyCoder</span>
+        </div>
+        <div>
+          <span class="stat">MIT</span>
+          <span>Every product, free to use</span>
         </div>
       </div>
     </section>
 
-    <section id="products" class="section section-tint">
+    <section id="products" class="section">
       <div class="shell">
         <div class="section-header">
           <div>
             <p class="overline">Products</p>
-            <h2>What we make.</h2>
+            <h2>Three products, one principle.</h2>
+            <p class="section-lede">Software that does real work for you — and shows exactly what it did.</p>
           </div>
           <a class="inline-link" href="https://github.com/OIerYangJZ" target="_blank" rel="noreferrer">All source on GitHub ↗</a>
         </div>
 
         <div class="project-grid">
-          <a class="project-card" href="/mycoder/">
+          <a class="project-card card-mycoder" href="/mycoder/">
+            <span class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </span>
             <div class="project-topline">
               <span>Developer tools</span>
               <span class="status-badge">Alpha</span>
             </div>
             <h3>MyCoder</h3>
             <p>
-              A coding agent kernel for the terminal. It reads, edits, runs your tests, and checks its own work —
-              with every tool call decided by a policy engine before it runs.
+              A coding agent for the terminal. It reads, edits, runs your tests, and checks its own work — with every
+              tool call decided by a policy engine before it runs.
             </p>
             <div class="project-bottom">
               <span>CLI · Linux · macOS · Windows</span>
@@ -179,15 +189,18 @@
             </div>
           </a>
 
-          <a class="project-card" href="/paperpilot/">
+          <a class="project-card card-paperpilot" href="/paperpilot/">
+            <span class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg>
+            </span>
             <div class="project-topline">
               <span>Research</span>
-              <span>Self-hosted</span>
+              <span class="status-badge">Self-hosted</span>
             </div>
             <h3>PaperPilot</h3>
             <p>
-              A daily arXiv radar ranked against your research profile, with a reader and structured AI notes —
-              all kept as local Markdown for Obsidian or any knowledge base.
+              A daily arXiv radar ranked against your research profile, with a reader and structured AI notes — all
+              kept as local Markdown for Obsidian or any knowledge base.
             </p>
             <div class="project-bottom">
               <span>CLI + Web UI · Local-first</span>
@@ -195,10 +208,13 @@
             </div>
           </a>
 
-          <a class="project-card" href="/finalpilot/">
+          <a class="project-card card-finalpilot" href="/finalpilot/">
+            <span class="product-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </span>
             <div class="project-topline">
               <span>Education</span>
-              <span>Self-hosted</span>
+              <span class="status-badge">Self-hosted</span>
             </div>
             <h3>FinalPilot</h3>
             <p>
@@ -214,31 +230,47 @@
       </div>
     </section>
 
-    <section id="mycoder" class="section">
+    <section id="mycoder" class="section section-tint">
       <div class="shell split-layout">
         <div class="section-kicker">
           <p class="overline">Flagship product</p>
           <h2>MyCoder: an agent that says what it can enforce.</h2>
+          <p class="section-lede">
+            Most agents ask you to trust them. MyCoder tells you, per dimension, what is actually isolated — before
+            you type anything.
+          </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://www.npmjs.com/package/mycoder-cli" target="_blank" rel="noreferrer">Install from npm</a>
-            <a class="button button-secondary" href="/mycoder/">Product page</a>
+            <a class="button button-primary" href="/mycoder/">Product page</a>
+            <a class="button button-secondary" href="https://github.com/OIerYangJZ/MyCoder" target="_blank" rel="noreferrer">Source ↗</a>
           </div>
         </div>
 
         <div class="feature-list">
           <article>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
             <h3>Policy before action</h3>
             <p>Every tool call becomes an access request that a policy engine approves or refuses before the tool does anything.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></svg>
+            </span>
             <h3>Zero runtime dependencies</h3>
-            <p>One process on Node 22.18+. The supply chain is the package itself, and published bytes are the bytes the release gate tested.</p>
+            <p>One process on Node 22.18+. Published bytes are the bytes the release gate tested, with npm provenance.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+            </span>
             <h3>Bring your own model</h3>
-            <p>Adapters for Anthropic Messages, OpenAI Responses, and OpenAI-compatible APIs such as DeepSeek, OpenRouter, or a local llama.cpp.</p>
+            <p>Adapters for Anthropic Messages, OpenAI Responses, and OpenAI-compatible APIs such as DeepSeek or a local llama.cpp.</p>
           </article>
           <article>
+            <span class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16v-5M12 16V8M17 16v-9"/></svg>
+            </span>
             <h3>Honest accounting</h3>
             <p>Token and cost totals come from the session's own event log. Refused actions are reported separately from completed ones.</p>
           </article>
@@ -246,7 +278,7 @@
       </div>
     </section>
 
-    <section id="research" class="section section-tint">
+    <section id="research" class="section">
       <div class="shell">
         <div class="section-header capability-header">
           <div>
@@ -292,7 +324,7 @@
       </div>
     </section>
 
-    <section id="company" class="section">
+    <section id="company" class="section section-tint">
       <div class="shell split-layout leadership-layout">
         <div class="section-kicker">
           <p class="overline">Company</p>
@@ -332,8 +364,8 @@
           <h2>Try MyCoder today, and tell us what breaks.</h2>
         </div>
         <div class="contact-side">
-          <a class="button button-primary" href="https://github.com/OIerYangJZ/MyCoder/issues" target="_blank" rel="noreferrer">Report an issue</a>
-          <p>Product questions: <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a></p>
+          <a class="button" href="/mycoder/">Install MyCoder</a>
+          <p>Questions? <a href="mailto:contact@jinseylab.tech">contact@jinseylab.tech</a></p>
         </div>
       </div>
     </section>
@@ -342,7 +374,7 @@
   <footer class="footer">
     <div class="shell footer-main">
       <div>
-        <a class="brand footer-brand" href="#top">
+        <a class="brand footer-brand" href="/">
           <span class="brand-mark footer-mark" aria-hidden="true">
             <span class="brand-mark-j">J</span><span class="brand-mark-l">L</span>
           </span>
@@ -372,6 +404,6 @@
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
